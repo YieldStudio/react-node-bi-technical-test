@@ -149,3 +149,46 @@ export interface Request<TResponse> { execute(params: RequestParams): Promise<TR
 - Frontend & data-viz (15)
 - Tests (10)
 - Doc (5)
+
+## Getting Started
+
+1. Cloner le repo :
+   ```bash
+   git clone https://github.com/YieldStudio/react-node-bi-technical-test.git
+   cd react-node-bi-technical-test
+   ```
+
+2. Lancer le projet :
+   ```bash
+   pnpm install
+   pnpm run dev
+   ```
+3. Vérifier que le front-end est accessible à l’adresse `http://localhost:3000`.
+
+4. Vérifier que le back-end est accessible à l’adresse `http://localhost:3001`.
+
+5. Vérifier que les tests fonctionnent :
+   ```bash
+   pnpm run test
+   
+   # Vous pouvez lancer les tests en mode watch depuis le dossier apps/api
+   cd apps/api
+   pnpm run test:watch
+   ```
+
+6. Commencer à implémenter les fonctionnalités demandées.
+
+7. Créer un **dépôt privé** sur GitHub depuis votre compte.
+
+8. Changer l’origine Git pour pointer vers votre dépôt privé :
+   ```bash
+   git remote remove origin
+   git remote add origin git@github.com:<votre-compte>/<votre-repo-prive>.git
+   ```
+
+9. Pousser votre travail :
+    ```bash
+    git push -u origin main
+    ```
+
+10. Invitez-nous en tant que collaborateurs sur ce dépôt privé (vous recevrez nos identifiants GitHub par email).
