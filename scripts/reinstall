@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# Delete all node_modules directories
+find ./* -name "node_modules" -type d -prune -exec rm -rf '{}' +
+
+# Reinstall with pnpm
+pnpm install
